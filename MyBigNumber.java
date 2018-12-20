@@ -1,17 +1,35 @@
+/**
+ * Tác giả: Phạm Anh Tuấn
+ * Hàm sum là hàm thực hiện phép cộng hai chuỗi số
+ *
+*/
 
-import java.util.ArrayList;
-import java.time.format.DateTimeFormatter;
-import java.time.LocalDateTime;
-
-
-public class MyBigNumber implements stringSum{
+public class MyBigNumber{
+	
+	private IReceiver ireceiver;
+	
+	public MyBigNumber(IReceiver ireceiver){
+		this.ireceiver = ireceiver;
+	}
 	// Phuong thuc cong 2 chuoi so
 	public static String sum(String s1, String s2){
-		String result= "";
 		int str_s1 = s1.length();// Lay do dai chuoi 1 
 		int str_s2 = s2.length();// Lay do dai chuoi 2
-		
+		String result= "";// chuoi luu ket qua tam thoi
 		int max = str_s1;// dat gioi han chuan cua 2 chuoi
+		int check = 0;// bien kiem tra loi
+		String loi = "";// chuoi de bao loi
+		String result = "";// chuoi luu ket qua tam thoi
+		String fresult = "";// chuoi luu ket qua cuoi cung
+		String step = "";// chuoi luu cac buoc cua phep tinh
+		try{
+			if(!s1.matches("^[0-9]+$") || !s2.matches("^[0-9]+$")){
+				throw new NumberFormatException();
+			}
+		} catch (NumberFormatException ex){
+			check = 1;
+			loi = "Khong nhap ki tu, chu cai. Vui long nhap lai!";
+		}
 		
 		// so sanh do dai 2 chuoi de tiep tuc chay vong lap
 		if(str_s1 > str_s2){
@@ -37,14 +55,22 @@ public class MyBigNumber implements stringSum{
 			int temp2 = dig_2 - '0';// tao bien de luu ket qua dig_2
 			
 			int sumAll = temp1 + temp2 + flag; // bien tinh Tong gia tri
-			
-			if(num1 >= 0){
-				result += (sumAll % 10);
-			}else{
-				result += sumAll;
-			}
+	
+			result += (sumAll % 10);//tong 2 ki tu duoc lay ra
+
 			flag = sumAll/10 ; // cong so du
+			if (i == 0){
+				step += "\n" + " Lay " + temp1 + " cong voi " + temp2
+					+ " bang " + flag + "\n";
+			} else{
+				step += "\n" + " Lay " + temp1 + " cong voi " + temp2
+					+ " bang " + flag + " , " + "Nho " + flag + "Ghi" + result;
+			}
 		}
+		if(flag > 0){
+			result = flag + result;
+		}
+		this.ireceiver.send(step);
 		return result;
 	}
 }
