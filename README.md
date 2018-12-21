@@ -2,10 +2,22 @@
 
 This project was built by NetNeans IDE
 
-Now you can download the executable file and run on your computer. Google Drive link : https://drive.google.com/drive/folders/1kR4E9CabeUt7YWQT1GER20B5DACaFwLu?usp=sharing
+Để chạy chương trình trên command line, chuyển đến thư mục chứa file .jar và gõ dòng lệnh sau trên cmd:
 
-*How to run :
+java -jar MyBigNumber.jar
 
-    Download MyBigNumber folder to your computer and run.
+Chương trình yêu cầu nhập vào 2 số A và B sau đó xuất ra lời giải và kết quả tính tổng
+
+Ví dụ demo:
+java -jar MyBigNumber.jar
+			~ BAI TOAN CONG 2 SO ~
+Nhap vao so A = 456
+Nhap vao so B = 789
+			   ~ Bai giai ~
+456 + 789 = ?
+Buoc 1: Lay 6 + 9	 	 Duoc 15 Ghi 5  Nho 1	(21:03)
+Buoc 2: Lay 5 + 8 Them 1 Duoc 14 Ghi 4  Nho 1	(21:03)
+Buoc 3: Lay 4 + 7 Them 1 Duoc 12 Ghi 12			(21:03)
+456 + 789 = 1245
     
 
