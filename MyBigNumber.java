@@ -11,17 +11,16 @@ public class MyBigNumber{
 	public MyBigNumber(IReceiver ireceiver){
 		this.ireceiver = ireceiver;
 	}
+	
 	// Phuong thuc cong 2 chuoi so
-	public static String sum(String s1, String s2){
-		int str_s1 = s1.length();// Lay do dai chuoi 1 
-		int str_s2 = s2.length();// Lay do dai chuoi 2
-		String result= "";// chuoi luu ket qua tam thoi
+	public String sum(String s1, String s2){
 		int max = str_s1;// dat gioi han chuan cua 2 chuoi
 		int check = 0;// bien kiem tra loi
 		String loi = "";// chuoi de bao loi
 		String result = "";// chuoi luu ket qua tam thoi
-		String fresult = "";// chuoi luu ket qua cuoi cung
 		String step = "";// chuoi luu cac buoc cua phep tinh
+		int str_s1 = s1.length();// Lay do dai chuoi 1 
+		int str_s2 = s2.length();// Lay do dai chuoi 2
 		try{
 			if(!s1.matches("^[0-9]+$") || !s2.matches("^[0-9]+$")){
 				throw new NumberFormatException();
