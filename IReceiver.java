@@ -3,5 +3,5 @@
  *
  */
 public interface IReceiver{
-	public abstract void send(String step);
+	void send(String step);
 }
