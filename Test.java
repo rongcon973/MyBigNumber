@@ -122,4 +122,43 @@ public class Test {
         }
     }
 
+    @org.junit.Test
+    public void sum15() {
+        System.out.println("\n#Testcase 15:");
+        String s1 = "";
+        String s2 = "123";
+        System.out.println("A = " + s1);
+        System.out.println("B = " + s2);
+        String expResult = "123";
+        MyBigNumber instance = new MyBigNumber(this);
+        String result = instance.sum(s1, s2);
+        assertEquals(expResult, result);
+    }
+
+    @org.junit.Test
+    public void sum16() {
+        System.out.println("\n#Testcase 16:");
+        String s1 = "123";
+        String s2 = "";
+        System.out.println("A = " + s1);
+        System.out.println("B = " + s2);
+        String expResult = "123";
+        MyBigNumber instance = new MyBigNumber(this);
+        String result = instance.sum(s1, s2);
+        assertEquals(expResult, result);
+    }
+    
+    @org.junit.Test
+    public void sum17() {
+        System.out.println("\n#Testcase 17:");
+        String s1 = "";
+        String s2 = "";
+        System.out.println("A = " + s1);
+        System.out.println("B = " + s2);
+        String expResult = "0";
+        MyBigNumber instance = new MyBigNumber(this);
+        String result = instance.sum(s1, s2);
+        assertEquals(expResult, result);
+    }
+
 }
