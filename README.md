@@ -1,23 +1,12 @@
+MyBigNumber
 
+1. Introduction
+	1. Phần mềm cộng 2 số , trong đó 2 số nhập vào dưới dạng chuỗi					
+	2. Phần mềm được viết bằng NetBeans, giao diện console						
+	3. Người dùng có thể chạy file MyBigNumberTest.java để xem các testcase về phần mềm.
 
-This project was built by NetNeans IDE
-
-Để chạy chương trình trên command line, chuyển đến thư mục chứa file .jar và gõ dòng lệnh sau trên cmd:
-
-java -jar MyBigNumber.jar
-
-Chương trình yêu cầu nhập vào 2 số A và B sau đó xuất ra lời giải và kết quả tính tổng
-
-Ví dụ demo:
-java -jar MyBigNumber.jar
-			~ BAI TOAN CONG 2 SO ~
-Nhap vao so A = 456
-Nhap vao so B = 789
-			   ~ Bai giai ~
-456 + 789 = ?
-Buoc 1: Lay 6 + 9	 	 Duoc 15 Ghi 5  Nho 1	(21:03)
-Buoc 2: Lay 5 + 8 Them 1 Duoc 14 Ghi 4  Nho 1	(21:03)
-Buoc 3: Lay 4 + 7 Them 1 Duoc 12 Ghi 12			(21:03)
-456 + 789 = 1245
-    
-
+Cách sử dụng 1 chạy file Add2Number: 
+B1:Nhâp số thứ nhất vào ô bên cạnh chữ "Nhập số thứ 1". 
+B2:Nhâp số thứ hai vào ô bên cạnh chữ "Nhập số thứ 2".
+B3:Nhấn vào nút sum để thực hiện phép toán. Kết quả và các bước thực hiện sẽ được in ra màn hình phía bên dưới.
+B4:Nhấn vào nút clean để xóa phép toán đang thực hiện và thực hiện phép toán mới nếu muốn.
