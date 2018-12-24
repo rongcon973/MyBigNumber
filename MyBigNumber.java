@@ -1,6 +1,6 @@
 /**
- * Tác giả: Phạm Anh Tuấn
- * Hàm sum là hàm thực hiện phép cộng hai chuỗi số
+ * Tác giả: Phạm Anh Tuấn.
+ * Hàm sum là hàm thực hiện phép cộng hai chuỗi số.
  *
 */
 
@@ -12,7 +12,7 @@ public class MyBigNumber{
 		this.ireceiver = ireceiver;
 	}
 	
-	// Phuong thuc cong 2 chuoi so
+	// Phuong thuc cong 2 chuoi so.
 	public String sum(final String s1,final String s2) {
 		
 		int max = str_s1;// dat gioi han chuan cua 2 chuoi
